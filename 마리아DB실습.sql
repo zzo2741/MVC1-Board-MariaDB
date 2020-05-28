@@ -86,8 +86,7 @@ FROM tb_date;
 CREATE TABLE tb_spec(
  idx INT AUTO_INCREMENT,
  spec1 ENUM('M','w','T'), # radio느낌
- spec2
-SET('A','B','C','D'), # checkbox느낌
+ spec2 SET('A','B','C','D'), # checkbox느낌
 PRIMARY KEY(idx)
 );
 INSERT INTO tb_spec (spec1, spec2) VALUES('W', 'A,B,C');

@@ -58,13 +58,14 @@
 		</table>
 	</form>
 	<%
-		} else {
+		} else
+		{
 	%>
 	<!-- 로그인에 성공했을때 출력되는 화면 -->
 	<table border='1'>
 		<tr>
 			<td style="text-align: center;">
-			<!-- 세션영역은 웹브라우저를 최초 연후 닫을 때 까지 그 영역이 공유되므로 로그인처리 페이지에서 저장된 내용을 가져올 수 있다. -->
+				<!-- 세션영역은 웹브라우저를 최초 연후 닫을 때 까지 그 영역이 공유되므로 로그인처리 페이지에서 저장된 내용을 가져올 수 있다. -->
 				<%=session.getAttribute("USER_NAME")%>
 				회원님(가입일 :
 				<%=session.getAttribute("USER_REGIDATE")%>
