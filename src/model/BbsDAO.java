@@ -111,7 +111,7 @@ public class BbsDAO
 		//		String query = "SELECT * FROM board WHERE num = ?";
 
 		//변경쿼리문 : member테이블과 join하여 사용자이름 가져옴.
-		String query = "SELECT B.*, M.name FROM member M INNER JOIN board B ON M.id = B.id WHERE num = ?";
+		String query = "SELECT B.*, M.name FROM membership M INNER JOIN multi_board B ON M.id = B.id WHERE num = ?";
 
 		try
 		{

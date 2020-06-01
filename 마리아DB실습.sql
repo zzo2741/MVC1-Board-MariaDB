@@ -26,7 +26,7 @@ CREATE TABLE board
  content TEXT NOT NULL,
  postdate DATETIME DEFAULT CURRENT_TIMESTAMP,
  id VARCHAR(30) NOT NULL,
- visitcount MEDIUMINT NOT NULL DEFAULT 0, PRIMARY KEY (num) 
+ visitcount int NOT NULL DEFAULT 0, PRIMARY KEY (num) 
 );
 # 회원테이블과 게시판테이블의 참조 제약 조건
 ALTER TABLE board ADD CONSTRAINT fk_board_member FOREIGN KEY (id) REFERENCES member (id);
